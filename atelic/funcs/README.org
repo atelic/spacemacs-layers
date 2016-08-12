@@ -1,0 +1,37 @@
+#+TITLE: atelic/funcs layer
+
+# The maximum height of the logo should be 200 pixels.
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                        :TOC_4_gh:noexport:
+ - [[#description][Description]]
+ - [[#install][Install]]
+ - [[#key-bindings][Key bindings]]
+
+* Description
+This layer adds a bunch of useful functions targeted at c and python development for now.
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =atelic/funcs= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+* Key bindings
+
+| Key Binding        | Function                      | Description                                                                                                             |
+|--------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------|
+| ~SPC o x~          | ~atelic/insert-c-header~      | Insert a comment with the name of the file and other information                                                        |
+| ~SPC o d~          | ~atelic/date-at-point~        | Insert an org mode level 3 header with the current date in the form of "%Y-%m-%d %A"                                    |
+| ~SPC o p n~        | ~atelic/python-negate~        | Transform True -> False or False -> True                                                                                |
+| ~M-@~              | ~atelic/mark-current-word~    | Put point at beginning of current word, set mark at end                                                                 |
+| ~C-;~              | ~atelic/comment-dwim-line~    | If no region is selected and current line is not blank and we are not at the end of the line,then comment current line. |
+| ~C-l~ (in shell)   | ~atelic/shell-clear-buffer~   | Clear the terminal in =shell-mode=                                                                                      |
+| ~SPC o s l~        | ~atelic/sort-lines-by-length~ | Sorts lines in the region by length                                                                                     |
+| ~post-self-insert~ | ~atelic/dcaps-to-scaps~       | Convert word in DOuble CApitals to Single Capitals                                                                      |
+
+
+# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
+# Examples:
+# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
+# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
+# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.
